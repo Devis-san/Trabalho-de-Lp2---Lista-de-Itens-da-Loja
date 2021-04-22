@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Itens
 {
-    public string Nome;
+    public string nome;
     public int Identificador;
     public int Preco;
     public string Detalhes;
@@ -39,43 +39,43 @@ public class Trabalho
 
             Itens Punhal_Do_Louco = new Itens();
             Punhal_Do_Louco.Identificador = 1;
-            Punhal_Do_Louco.Nome = "Punhal do Louco";
+            Punhal_Do_Louco.nome = "Punhal do Louco";
             Punhal_Do_Louco.Preco = 90;
             Punhal_Do_Louco.Detalhes = "O Punhal que uma vez pertenceu a um Serial Killer usuário de magia elétrica(+30% DE DANO ELÉTRICO)";
 
             Itens Manoplas_Do_Dragão = new Itens();
             Manoplas_Do_Dragão.Identificador = 2;
-            Manoplas_Do_Dragão.Nome = "Manoplas do Dragão";
+            Manoplas_Do_Dragão.nome = "Manoplas do Dragão";
             Manoplas_Do_Dragão.Preco = 300;
             Manoplas_Do_Dragão.Detalhes = "Essas manoplas foram criadas a partir de escamas do lendário dragão de fogo Falkor(+70% DE DANO DE FOGO)";
 
             Itens Cetro_De_Rá = new Itens();
             Cetro_De_Rá.Identificador = 3;
-            Cetro_De_Rá.Nome = "Cetro de Rá";
+            Cetro_De_Rá.nome = "Cetro de Rá";
             Cetro_De_Rá.Preco = 400;
             Cetro_De_Rá.Detalhes = "Um Cetro egípcio que muito antigo, com hieróglifos talhados, dizem que uma vez pertenceu a Rá, o Deus Egípcio do Sol(+50% NA VELOCIDADE DE CONJURAÇÃO)";
 
             Itens Lemegeton = new Itens();
             Lemegeton.Identificador = 4;
-            Lemegeton.Nome = "Lemegeton";
+            Lemegeton.nome = "Lemegeton";
             Lemegeton.Preco = 350;
             Lemegeton.Detalhes = "Também conhecido como 'A Chave Menor de Salomão' esse Grimório possui o conhecimento de invocação demoníaca do Rei Salomão(+50% DE CHANCE DE INVOCAR UM DEMÔNIO DE CLASSIFICAÇÃO ALEATÓRIA AO MATAR UM INIMIGO)";
 
             Itens Espada_Matadora_De_Deuses = new Itens();
             Espada_Matadora_De_Deuses.Identificador = 5;
-            Espada_Matadora_De_Deuses.Nome = "Espada Matadora de Deuses";
+            Espada_Matadora_De_Deuses.nome = "Espada Matadora de Deuses";
             Espada_Matadora_De_Deuses.Preco = 1000;
             Espada_Matadora_De_Deuses.Detalhes = "Espada usada por um semideus grego para derrubar o Olimpus em uma vingança com os Titãs(20% DE CHANCE DE MATAR INSTANTANEAMENTE QUALQUER MONSTRO)";
 
             Itens Lâminas_Do_Caos = new Itens();
             Lâminas_Do_Caos.Identificador = 6;
-            Lâminas_Do_Caos.Nome = "Lâminas do Caos";
+            Lâminas_Do_Caos.nome = "Lâminas do Caos";
             Lâminas_Do_Caos.Preco = 700;
             Lâminas_Do_Caos.Detalhes = "Arma concedida a um mortal pelo deus da guerra Áres(+70% DE BÔNUS DE DANO QUANDO A VIDA ESTIVER ABAIXO DE 80%)";
 
             Itens Lanche_Da_Mamãe = new Itens();
             Lanche_Da_Mamãe.Identificador = 7;
-            Lanche_Da_Mamãe.Nome = "Lanche da Mamãe";
+            Lanche_Da_Mamãe.nome = "Lanche da Mamãe";
             Lanche_Da_Mamãe.Preco = 10000;
             Lanche_Da_Mamãe.Detalhes = "Esse lanche foi preparado pelas graciosas mãos da mamãe, e feito com muito carinho S2(+200% DE BÔNUS EM TODOS OS STATUS POR 48h)";
 
@@ -144,14 +144,14 @@ public class Trabalho
             JogaNome0 = JogaNome0.ToLower();
             foreach(Jogador p in Jogadores)
             {
-                if(p.nome == JogaNome0)
+                if(p.Nome == JogaNome0)
                 {
                     Console.WriteLine("");
                     Console.WriteLine("Itens:");
                     Console.WriteLine("");
                     for (int i = 0; i < p.Itens.Count; i++)
                     {
-                        Console.WriteLine("Itens: " + p.Itens[i].Nome);
+                        Console.WriteLine("Itens: " + p.Itens[i].nome);
                     }//FIM DO FOR
                     Console.WriteLine("");
                     Console.WriteLine("Entre com qualquer tecla para continuar");
@@ -177,26 +177,26 @@ public class Trabalho
                 {       
                     Console.WriteLine("- Insira o ID do item que você quer comprar:");
                     Console.WriteLine("");
-                    Console.WriteLine(Punhal_do_Louco.Identificador + " - " + Punhal_do_Louco.Nome  + " " + Punhal_do_Louco.Detalhes);
+                    Console.WriteLine(Punhal_do_Louco.Identificador + " - " + Punhal_do_Louco.nome  + " " + Punhal_do_Louco.Detalhes);
                     Console.WriteLine("");
-                    Console.WriteLine(Manoplas_Do_Dragão.Identificador + " - " + Manoplas_Do_Dragão.Nome  + " " + Manoplas_Do_Dragão.Detalhes);
+                    Console.WriteLine(Manoplas_Do_Dragão.Identificador + " - " + Manoplas_Do_Dragão.nome  + " " + Manoplas_Do_Dragão.Detalhes);
                     Console.WriteLine("");
-                    Console.WriteLine(Cetro_De_Rá.Identificador + " - " + Cetro_De_Rá.Nome  + " " + Cetro_De_Rá.Detalhes);
+                    Console.WriteLine(Cetro_De_Rá.Identificador + " - " + Cetro_De_Rá.nome  + " " + Cetro_De_Rá.Detalhes);
                     Console.WriteLine("");
-                    Console.WriteLine(Lemegeton.Identificador + " - " + Lemegeton.Nome  + " " + Lemegeton.Detalhes);
+                    Console.WriteLine(Lemegeton.Identificador + " - " + Lemegeton.nome  + " " + Lemegeton.Detalhes);
                     Console.WriteLine("");
-                    Console.WriteLine(Espada_Matadora_De_Deuses.Identificador + " - " + Espada_Matadora_De_Deuses.Nome + " " + Espada_Matadora_De_Deuses.Detalhes);       
+                    Console.WriteLine(Espada_Matadora_De_Deuses.Identificador + " - " + Espada_Matadora_De_Deuses.nome + " " + Espada_Matadora_De_Deuses.Detalhes);       
                     Console.WriteLine("");
-                    Console.WriteLine(Lâminas_Do_Caos.Identificador + " - " + Lâminas_Do_Caos.Nome + " " + Lâminas_Do_Caos.Detalhes);       
+                    Console.WriteLine(Lâminas_Do_Caos.Identificador + " - " + Lâminas_Do_Caos.nome + " " + Lâminas_Do_Caos.Detalhes);       
                     Console.WriteLine("");
-                    Console.WriteLine(Lanche_Da_Mamãe.Identificador + " - " + Lanche_Da_Mamãe.Nome + " " + Lanche_Da_Mamãe.Detalhes);       
+                    Console.WriteLine(Lanche_Da_Mamãe.Identificador + " - " + Lanche_Da_Mamãe.nome + " " + Lanche_Da_Mamãe.Detalhes);       
                     Console.WriteLine("");
                     var ic = Console.ReadLine();
                  
 
                     if( ic == Punhal_Do_Louco.Identificador.ToString() ){
 
-                        Console.WriteLine("Você gostaria de comprar " + Punhal_Do_Louco.Nome + " por " + Punhal_Do_Louco.Preco + "Ouros? (S)/(N)");
+                        Console.WriteLine("Você gostaria de comprar " + Punhal_Do_Louco.nome + " por " + Punhal_Do_Louco.Preco + "Ouros? (S)/(N)");
                         Console.WriteLine("Ouro no banco:" + p.Ouro);
                         var resp = Console.ReadLine();
                         if(resp == "s")
@@ -229,7 +229,7 @@ public class Trabalho
 
                     else if(ic == Manoplas_Do_Dragão.Identificador.ToString())
                     {
-                        Console.WriteLine("Você gostaria de comprar " + Manoplas_Do_Dragão.Nome + " por " + Manoplas_Do_Dragão.Preco + "Ouros? (S)/(N)");
+                        Console.WriteLine("Você gostaria de comprar " + Manoplas_Do_Dragão.nome + " por " + Manoplas_Do_Dragão.Preco + "Ouros? (S)/(N)");
                         Console.WriteLine("Ouro no banco:" + p.Ouro);              
                          var resp = Console.ReadLine();
                         if(resp == "s")
@@ -262,7 +262,7 @@ public class Trabalho
                     else if(ic == Cetro_De_Rá.Identificador.ToString())
                     {
 
-                       Console.WriteLine("Você gostaria de comprar " + Cetro_De_Rá.Nome + " por " + Cetro_De_Rá.Preco + "Ouros? (S)/(N)");
+                       Console.WriteLine("Você gostaria de comprar " + Cetro_De_Rá.nome + " por " + Cetro_De_Rá.Preco + "Ouros? (S)/(N)");
                        Console.WriteLine("Ouro no banco:" + p.Ouro);
                        var resp = Console.ReadLine();
                        resp = resp.ToLower();
@@ -295,7 +295,7 @@ public class Trabalho
 
                     else if(ic == Lemegeton.Identificador.ToString())
                     {
-                       Console.WriteLine("Você gostaria de comprar " + Lemegeton.Nome + " por " + Lemegeton.Preco + "Ouros? (S)/(N)");
+                       Console.WriteLine("Você gostaria de comprar " + Lemegeton.nome + " por " + Lemegeton.Preco + "Ouros? (S)/(N)");
                        Console.WriteLine("Seu ouro:" + p.Ouro);
                        var resp = Console.ReadLine();
                          resp = resp.ToLower();
@@ -329,7 +329,7 @@ public class Trabalho
                     else if(ic == Espada_Matadora_De_Deuses.Identificador.ToString())
                     {
 
-                        Console.WriteLine("Você gostaria de comprar " + Espada_Matadora_De_Deuses.Nome + " por " + Espada_Matadora_De_Deuses.Preco + "Ouros? (S)/(N)");
+                        Console.WriteLine("Você gostaria de comprar " + Espada_Matadora_De_Deuses.nome + " por " + Espada_Matadora_De_Deuses.Preco + "Ouros? (S)/(N)");
                         Console.WriteLine("Seu ouro:" + p.Ouro);
                        var resp = Console.ReadLine();
                          resp = resp.ToLower();
@@ -364,7 +364,7 @@ public class Trabalho
                     else if(ic == Lâminas_Do_Caos.Identificador.ToString())
                     {
 
-                        Console.WriteLine("Você gostaria de comprar " + Lâminas_Do_Caos.Nome + " por " + Lâminas_Do_Caos.Preco + "Ouros? (S)/(N)");
+                        Console.WriteLine("Você gostaria de comprar " + Lâminas_Do_Caos.nome + " por " + Lâminas_Do_Caos.Preco + "Ouros? (S)/(N)");
                         Console.WriteLine("Seu ouro:" + p.Ouro);
                        var resp = Console.ReadLine();
                          resp = resp.ToLower();
@@ -399,7 +399,7 @@ public class Trabalho
                     else if(ic == Lanche_Da_Mamãe.Identificador.ToString())
                     {
 
-                        Console.WriteLine("Você gostaria de comprar " + Lanche_Da_Mamãe.Nome + " por " + Lanche_Da_Mamãe.Preco + "Ouros? (S)/(N)");
+                        Console.WriteLine("Você gostaria de comprar " + Lanche_Da_Mamãe.nome + " por " + Lanche_Da_Mamãe.Preco + "Ouros? (S)/(N)");
                         Console.WriteLine("Seu ouro:" + p.Ouro);
                        var resp = Console.ReadLine();
                          resp = resp.ToLower();
